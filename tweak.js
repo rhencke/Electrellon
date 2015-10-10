@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
 	const body = document.body;
-	const css = document.createElement("style");
+	const css = document.createElement('style');
 
 	css.appendChild(document.createTextNode(`
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	#header {
 		height: 22px;
 		padding: 8px 5px 8px 78px;
-   		box-shadow: 0 -1px 0 0 rgba(0,0,0,0.1) inset;
+		box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
 	}
 
 	.header-btn {
@@ -43,5 +43,4 @@ document.addEventListener("DOMContentLoaded", function() {
 	`));
 
 	body.appendChild(css);
-
 });
