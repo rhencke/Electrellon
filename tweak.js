@@ -1,38 +1,47 @@
-window.addEventListener("load", function() {
+document.addEventListener("DOMContentLoaded", function() {
+	const body = document.body;
+	const css = document.createElement("style");
 
-	const sheet = window.document.styleSheets[0];
+	css.appendChild(document.createTextNode(`
 
-	sheet.insertRule(`.icon-lg {
-		height: 20px !important;
-		font-size: 15px !important;
-		line-height: 24px !important;
-		width: 38px !important;
-	}`, 0);
+	.icon-lg {
+		height: 22px;
+		font-size: 15px;
+		line-height: 24px;
+		width: 37px;
+	}
 
-	sheet.insertRule(`#header {
-		height: 21px !important;
-		padding: 7px 5px 9px 78px !important;
-	}`, 0);
+	#header {
+		height: 22px;
+		padding: 8px 5px 8px 78px;
+   		box-shadow: 0 -1px 0 0 rgba(0,0,0,0.1) inset;
+	}
 
-	sheet.insertRule(`.header-btn {
-		height: 23px !important;
-		line-height: 23px !important;
-		min-width: 38px !important;
-	}`, 0);
+	.header-btn {
+		height: 22px;
+		line-height: 22px;
+		min-width: 37px;
+	}
 
-	sheet.insertRule(`.header-btn-icon {
-		line-height: 23px !important;
-	}`, 0);
+	.header-btn-icon {
+		line-height: 22px;
+	}
 
-	sheet.insertRule(`.header-logo,.header-user {
-		top: 7px !important;
-	}`, 0);
+	.header-logo,.header-user {
+		top: 8px;
+	}
 
-	sheet.insertRule(`.header-logo {
-		margin-top: -3px !important;
-	}`, 0);
-	sheet.insertRule(`input[type=text].header-search-input {
-		height: 23px !important;
-		min-height: 23px !important;
-	}`, 0);
+	.header-logo {
+		margin-top: -3px;
+	}
+
+	input[type=text].header-search-input {
+		height: 23px;
+		min-height: 23px;
+	}
+
+	`));
+
+	body.appendChild(css);
+
 });
